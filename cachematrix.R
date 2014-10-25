@@ -20,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## This function solves the inverse of a matrix.
 ## If the caculation has done previously, just retrieve the cached inverse.
+
 cacheSolve <- function(x, ...) {
         m <- x$getInverse()
         if(!is.null(m)) {
